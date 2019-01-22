@@ -36,7 +36,7 @@ alpha | 0
 lambda | 0.40
 
 ## Result
-The chart below shows the relative importance of the various predictors, with the most important (Quantity) at the bottom.  You can see here that the conclusions from the LDA analysis proved fairly helpful, though longitude and latitude still remained important predictors.  Interestinly, the ID field proved to have some predictive value -- glad I didn't remove it!
+The chart below shows the relative importance of the various predictors, with the most important (Quantity) at the bottom.  You can see here that the conclusions from the LDA analysis proved fairly helpful, though longitude and latitude still remained important predictors.  Interestingly, the ID field proved to have some predictive value -- glad I didn't remove it!
 [<img src='https://ze6nnw.by.files.1drv.com/y4mrYy6k6sOx_ydCmT_swWoiRJDQLKNXfwg0cKlFnqDXba0xDyKSbsGZ1me8bRrP4g-AHfASS_zQ0qbg0esqQFuXssiK32TCemXUy5xj47SkDHZBK-3UnNAJLVWt2j9hVS3Fh0bPvpxfCUW7sDfUl_RmD8gXqVF3_0gk-fZTa3xzmNUG0kJGjNVy_NarzkIR0LNY-MY_rpdQALcXxq7HkGDYQ?width=782&height=454&cropmode=none'>]
 
-The final model produced an **81.99% classification rate** on the public test set, good for 399th out of 6219 entries **(top 7%)**.  With a little more effort, I think that score could be improved further, and I'd like to try a deep learning NN in Python/Keras to that end.  But no guarantees I'll find the time for that!
+The final model produced an **81.99% classification rate** on the public test set, good for 399th out of 6220 entries **(top 7%)** as of 1/22/19.  With a little more effort, I think that score could be improved further, and I'd like to try a deep learning NN in Python/Keras to that end.  But no guarantees I'll find the time for that!
