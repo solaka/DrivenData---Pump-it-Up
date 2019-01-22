@@ -36,4 +36,4 @@ alpha | 0
 lambda | 0.40
 
 ## Result
-
+After a few iterations, my final model produced an 81.99% classification rate on the public test set, good for 399th out of 6219 entries.  With a little more effort, I think that score could be improved a bit more, and I'm eager to try a deep learning NN in Python/Keras to that end.  But no guarantees I'll be able to find the time for that!
