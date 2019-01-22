@@ -18,4 +18,22 @@ Because so many of the features were categorical, the opportunities for creative
 In addition, I created fields to capture the age of the well at inspection, the month and year the inspection occurred.  I also used linear discriminant analysis to (pre-)predict functionality based only on longitude, latitude, and altitude and included the results as features.  Thank you to Zlatan Kremonic for this suggestion (https://zlatankr.github.io/posts/2017/01/23/pump-it-up).
 
 ## Modeling
-After splitting the data 80/20 into training and validation subsets, I used a gradient boosted decision tree from R's XGBoost package for classification.  As ever, selecting the "best" hyperparameters for such a model is difficult.  The only thing unusual about the final parameters was that I ended up using fairly deep trees (max_depth = 16), possibly a result of the number of categorical variables and the relatively large number of levels for many of these.
+After splitting the data 80/20 into training and validation subsets, I used a gradient boosted decision tree from R's XGBoost package for classification.  As ever, selecting the "best" hyperparameters for such a model is difficult.  The only thing unusual about the final parameters was that I ended up using fairly deep trees (max_depth = 16), possibly a result of the number of categorical variables and the relatively large number of levels for many of these.  Final selections were as follows:
+
+Element | Selection
+--- | ---
+objective function | multi:softmax
+booster | gbtree
+eval_metric | merror
+eta | 0.02
+max_depth | 16
+min_child_weight | 4
+gamma | 0
+subsample | 0.70
+colsample_bytree | 0.70
+colsample_bylevel | 0.70
+alpha | 0
+lambda | 0.40
+
+## Result
+
