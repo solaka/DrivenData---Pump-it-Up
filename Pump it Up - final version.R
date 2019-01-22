@@ -28,7 +28,7 @@ collapse.levels = function(df, field, n) {   # retains top n levels by count, co
 
 #################################################################################
 
-my.dir = "C:/Users/anton/OneDrive/MS in Data Science/DrivenData/Pump it Up/"
+my.dir = "C:/Pump it Up/"
 
 train = read.csv(paste0(my.dir, "train data.csv"), header=TRUE, stringsAsFactors = TRUE)
 test = read.csv(paste0(my.dir, "test data.csv"), header=TRUE, stringsAsFactors = TRUE)
