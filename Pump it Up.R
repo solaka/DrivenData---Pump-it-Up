@@ -238,11 +238,11 @@ all.data$year_recorded = year(all.data$date_recorded)
 # LDA to pre-predict functionality based on geographic location (as suggested here: https://zlatankr.github.io/posts/2017/01/23/pump-it-up)
 data.lda = all.data %>% 
   filter(type == "train") %>%
-  dplyr::select(latitude_imp, longitude_imp, gps_height) %>%
+  dplyr::select(latitude_imp, longitude_imp) %>%
   as.matrix()
 
 data.lda.pred = all.data %>% 
-  dplyr::select(latitude_imp, longitude_imp, gps_height) %>%
+  dplyr::select(latitude_imp, longitude_imp) %>%
   as.matrix()
   
 mod.lda = lda(x = data.lda, grouping = target$status_group)
